@@ -8,13 +8,15 @@ body {
   height: 50px;
   width: 100%;
   align-items: center;
+  justify-content: center;
   position: fixed;
   column-gap: 50px;
   padding: 10px;
   top: 0px;
   right: 0px;
   margin-left: 5px;
-  background-color: white;
+  z-index: 5;
+  background-color: rgb(223, 222, 222);
 }
 
 img {

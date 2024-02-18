@@ -37,12 +37,12 @@
   width: 300px;
   background-color: rgb(215, 212, 212);
   overflow: scroll;
-  transform: translateX(-300px);
+  transform: translateX(-330px);
   transition: 1s;
 }
 
 .drawer-show + .content {
-  transform: translateX(0px);
+  transform: translateX(-30px);
 }
 
 .content a {

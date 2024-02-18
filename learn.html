@@ -6,30 +6,34 @@
     <title>Document</title>
   </head>
   <style>
-    body {
-      height: 3000px;
+    .parent {
+      display: flex;
+      column-gap: 20px;
     }
-    .learning {
-      height: 200px;
+    .child {
       width: 200px;
+      height: 200px;
       background-color: aqua;
-      position: fixed;
-      transition: 0.5s;
+    }
+
+    @media screen and (max-width: 600px) {
+      .parent {
+        flex-direction: column;
+        row-gap: 20px;
+      }
+      .child {
+        width: 100%;
+      }
     }
   </style>
   <body>
-    <div class="learning">hey Jackson</div>
-
-    <script>
-      const boxShadows = document.querySelector(".learning");
-
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 0) {
-          boxShadows.style.boxShadow = "10px 10px 5px gray";
-        } else {
-          boxShadows.style.boxShadow = "none";
-        }
-      });
-    </script>
+    <div class="parent">
+      <div class="child">NATHI</div>
+      <div class="child">NATHI</div>
+      <div class="child">NATHI</div>
+      <div class="child">NATHI</div>
+      <div class="child">NATHI</div>
+      <div class="child">NATHI</div>
+    </div>
   </body>
 </html>
